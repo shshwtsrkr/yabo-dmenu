@@ -13,8 +13,9 @@ static const char *colors[SchemeLast][2] = {
 	[SchemeSel] = { "#0f0f0f", "#ff7878" },
 	[SchemeOut] = { "#000000", "#00ffff" },
 };
-/* -l option; if nonzero, dmenu uses vertical list with given number of lines */
-static unsigned int lines      = 0;
+/* -l and -g options; controls number of lines and columns in grid if > 0 */
+static unsigned int lines      = 3;
+static unsigned int columns    = 8;
 
 /*
  * Characters not considered part of a word while deleting words
